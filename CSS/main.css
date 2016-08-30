@@ -1,0 +1,116 @@
+@font-face {
+    font-family: 'signikaregular';
+    src: url('../text/Signika/signika-regular-webfont.woff2') format('woff2'),
+    url('../text/Signika/signika-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'signikabold';
+    src: url('../text/Signika-bold/signika-bold-webfont.woff2') format('woff2'),
+    url('../text/Signika-bold/signika-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'signikalight';
+    src: url('../text/Signika-light/signika-light-webfont.woff2') format('woff2'),
+    url('../text/Signika-light/signika-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'signikasemibold';
+    src: url('../text/Signika-semibold/signika-semibold-webfont.woff2') format('woff2'),
+    url('../text/Signika-semibold/signika-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'opensansregular';
+    src: url('../text/Open-sans/opensans-light-webfont.woff2') format('woff2'),
+    url('../text/Open-sans/opensans-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+.main-about{
+    padding-top: 54px;
+    text-align: center;
+}
+.main-about span{
+    text-transform: uppercase;
+    font-family: signikasemibold;
+    font-size: 48px;
+
+}
+.main-about-detail span{
+font-family: signikaregular;
+    font-size: 16px;
+}
+.point {
+    position: relative;
+    top: -20px;
+    font-family: signikasemibold;
+    font-size: 48px;
+}
+.main-about-flex{
+    margin-top:60px;
+    margin-left:auto;
+    margin-right:auto;
+    display: flex;
+    width: 1400px;
+    justify-content: space-between;
+}
+.main-about-column article{
+    width:640px;
+    padding-left:15px ;
+    font-size:14px;
+    font-family: opensansregular;
+    text-align: justify;
+}
+.photo-container{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.main-about-column img{
+    width:270px;
+    height: 270px;
+    margin-bottom: 0;
+}
+.photo-info{
+    margin-top:-10px ;
+    color: white;
+    max-width:270px;
+    background-color: rgb(0,163,136);
+    padding-top:30px;
+    font-family: signikaregular;
+    text-transform: uppercase;
+    font-size: 18px;
+    text-align: center;
+}
+.photo-info span{
+    display:inline-block;
+    text-transform: none;
+    font-family: signikaregular;
+    font-size:16px;
+    margin-top:30px;
+}
+.photo-info-detail{
+    padding-left:15px ;
+    padding-right:15px ;
+    font-family: opensansregular;
+    font-size: 12px !important;
+    text-align: justify;
+}
+.photo-info img{
+    width: 21px;
+    height: 21px;
+    margin-left: 15px;
+    margin-top:35px;
+}
