@@ -1,15 +1,15 @@
 FROM node:argon
 
 # Create app directory
-RUN mkdir -p /usr/src/app
-WORKDIR /usr/src/app
+RUN mkdir -p /freemail207/
+WORKDIR /freemail207/
 
 # Install app dependencies
-COPY package.json /usr/src/app/
+COPY package.json /freemail207/
 RUN npm install
 
 # Bundle app source
-COPY  /usr/src/app
+COPY . /freemail207/
 
 EXPOSE 8080
 CMD [ "npm", "start" ]
