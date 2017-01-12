@@ -11,7 +11,7 @@ RUN npm install
 # Bundle app source
 COPY . /freemail207/pure_css
 COPY index.html /freemail207/
-RUN node server.js
+RUN  server.js
 
 EXPOSE 8080
 CMD [ "npm", "start" ]
