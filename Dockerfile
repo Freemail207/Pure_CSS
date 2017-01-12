@@ -1,15 +1,16 @@
-FROM node:argon
+FROM node:4-onbuild
 
 # Create app directory
-RUN mkdir -p /freemail207/
+RUN mkdir /freemail207/pure_css
 WORKDIR /freemail207/
 
 # Install app dependencies
-COPY package.json /freemail207/
+COPY package.json /freemail207/pure_css
 RUN npm install
 
 # Bundle app source
-COPY . /freemail207/
+COPY . /freemail207/pure_css
+RUN node server.js
 
 EXPOSE 8080
 CMD [ "npm", "start" ]
