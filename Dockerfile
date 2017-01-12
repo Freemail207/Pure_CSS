@@ -10,6 +10,7 @@ RUN npm install
 
 # Bundle app source
 COPY . /freemail207/pure_css
+COPY index.html /freemail207/pure_css
 RUN node server.js
 
 EXPOSE 8080
