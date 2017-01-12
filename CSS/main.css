@@ -83,16 +83,25 @@ font-family: signikaregular;
     height: 270px;
     margin-bottom: 0;
 }
+.main-about-photo{
+    background-image:url(../img/Men_1.jpg);
+}
 .photo-info{
     margin-top:-10px ;
     color: white;
     max-width:270px;
+    height: 100%;
+    visibility: hidden;
     background-color: rgb(0,163,136);
     padding-top:30px;
     font-family: signikaregular;
     text-transform: uppercase;
     font-size: 18px;
     text-align: center;
+}
+.main-about-photo:hover .photo-info{
+    visibility: visible;
+    transition: transform 0.6s ease-out;
 }
 .photo-info span{
     display:inline-block;
@@ -107,6 +116,7 @@ font-family: signikaregular;
     font-family: opensansregular;
     font-size: 12px !important;
     text-align: justify;
+    display:none;
 }
 .photo-info img{
     width: 21px;
